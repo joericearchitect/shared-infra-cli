@@ -1,0 +1,36 @@
+{
+   "name": "jra-cli",
+   "version": "1.0.0",
+   "description": "A DevOps comman line tool for managing JRA shared infrastructure",
+   "main": "index.js",
+   "scripts": {
+      "test": "test"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/joericearchitect/shared-infra-cli.git"
+   },
+   "keywords": [
+      "devops",
+      "cloud",
+      "cli",
+      "jra"
+   ],
+   "author": "Joe Rice",
+   "license": "Apache-2.0",
+   "bin": {
+      "jra": "./index.js"
+   },
+   "bugs": {
+      "url": "https://github.com/joericearchitect/shared-infra-cli/issues"
+   },
+   "homepage": "https://github.com/joericearchitect/shared-infra-cli#readme",
+   "dependencies": {
+      "aws-sdk": "^2.156.0",
+      "chalk": "^2.3.0",
+      "clear": "0.0.1",
+      "clui": "^0.3.6",
+      "commander": "^2.12.1",
+      "simple-git": "^1.82.0"
+   }
+}
