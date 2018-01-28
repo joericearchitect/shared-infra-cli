@@ -1,0 +1,18 @@
+aws:
+  authentication:
+    aws-access-key: AKIAI2KTTQXCHELPKWKQ
+    aws-secret-key: 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
+    aws-key-path: /home/vagrant/aws-keys/jra-build.pem
+    aws-key-pai-name: jra-build
+  general:
+    aws-region: us-east-1
+  dns:
+    aws-domain-hosted-zone-id: ZH2CTWO3D8CJ2
+
+jra-cli:
+  git:
+    git-home-dir: /home/vagrant/git
+    repositories:
+      shared-infra-dir: shared-infra
+      shared-infra-cli-dir: shared-infra-cli
+      shared-infra-terraform-modules-dir: shared-infra-terraform-modules

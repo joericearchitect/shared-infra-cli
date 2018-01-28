@@ -8,4 +8,4 @@ program
   .option('-f, --force', 'force installation')
   .parse(process.argv);
 
-console.log("<<-- executed jra swarm node");
+console.log("<<-- executed jracli swarm node");
