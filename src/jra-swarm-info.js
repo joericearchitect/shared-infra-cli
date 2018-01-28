@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const cliContextBuilder = require('./lib/jracli/core/cli-metadata-builder');
-const runtimeContextBuilder = require('./lib/jracli/core/runtime-context-builder');
+const cliContextBuilder = require('./lib/jracli/core/cli-context-builder');
+const runtimeContextBuilder = require('./lib/jracli/core/runtime-metadata-builder');
 
 var program = require('commander');
 
@@ -11,10 +11,8 @@ program
   .option('-f, --force', 'force installation')
   .parse(process.argv);
 
-const cliContext = cliContextBuilder.initalizeCliMetadata();
-const jraApplicationRuntimeMetadata =runtimeContextBuilder.getApplicationMetadata(cliContext);
-const jraEnvironmentRuntimeMetadata =runtimeContextBuilder.getEnvironmentMetadata(cliContext);
+const cliContext = cliContextBuilder.initalizeCliContext();
+const jraApplicationRuntimeInfo =runtimeContextBuilder.getApplicationRuntimeInfo(cliContext);
+const jraEnvironmentRuntimeInfo =runtimeContextBuilder.getEnvironmentRuntimeInfo(cliContext);
 
 console.log("\n\ninitalizeCliContext:  " + JSON.stringify(cliContext, null, 4));
-console.log("\n\njraApplicationRuntimeMetadata:  " + JSON.stringify(jraApplicationRuntimeMetadata, null, 4));
-console.log("\n\njraEnvironmentRuntimeMetadata:  " + JSON.stringify(jraEnvironmentRuntimeMetadata, null, 4));

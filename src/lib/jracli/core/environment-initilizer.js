@@ -4,7 +4,7 @@ const config = require('../config/default-config');
 const fsUtils = require('../../commons/util/file-utils');
 
 module.exports = {
-    initalizeConfigContext: function(cliContext) {
+    buildConfiguration: function(cliContext) {
         let configContext = new this.CcnfigContext();
 
         configContext.devConfig = yaml.safeLoad(fs.readFileSync(config.defaultConfig.devConfigFilePath, 'utf8'));
@@ -12,7 +12,7 @@ module.exports = {
         return configContext;
     },
 
-    scanConfigContextEnv: function(cliContext) {
+    scanEnvironment: function(cliContext) {
         let configContextEnv = new this.ConfigContextEnv();
 
         configContextEnv.devConfigFilesExists = fsUtils.isFileSync(config.defaultConfig.devConfigFilePath);
