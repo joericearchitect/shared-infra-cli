@@ -30,12 +30,14 @@
       "chalk": "^2.3.0",
       "clear": "0.0.1",
       "clui": "^0.3.6",
-      "node-stopwatch": "0.0.1",
       "commander": "^2.12.1",
-      "simple-git": "^1.82.0",
+      "deasync": "^0.1.12",
       "js-yaml": "^3.10.0",
       "moment": "^2.19.3",
+      "node-stopwatch": "0.0.1",
+      "simple-git": "^1.82.0",
       "sync-request": "^4.1.0",
+      "synchronize": "^2.0.0",
       "tabtab": "^2.2.2"
    }
 }

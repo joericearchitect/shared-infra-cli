@@ -2,6 +2,8 @@ const fs = require('fs');
 const moment = require('moment');
 const requestSync = require('sync-request');
 const Stopwatch = require("node-stopwatch").Stopwatch;
+const AWS = require('aws-sdk');
+const deasync = require("deasync");
 
 const logger = require("../util/logger")
 
@@ -16,7 +18,7 @@ module.exports = {
         return runtimeInfo;
     },
 
-    scanRuntimeMetadataEnv: function (cliContext) {
+    buildRuntimeMetadata: function (cliContext) {
         let runtimeMetadata = new CliContextRuntimeMetadata();
         let cacheConfigs = cliContext.configuration.cacheConfigs;
 
@@ -214,8 +216,9 @@ function buildJraEnvironmentRuntimeInfo(cliContext, jraEnvironmentMetadata) {
 
     let stopwatch = Stopwatch.create();
 
-    let cacheMeta = startBuildContext(stopwatch, jraEnvironmentMetadata.cacheConfig);
+    // ----------------------- build logic START ---------------------------------------------------------------------
 
+    // ----------------------- build logic END ---------------------------------------------------------------------
 
     stopBuildContext(cacheMeta, stopwatch, jraEnvironmentMetadata.cacheConfig);
 

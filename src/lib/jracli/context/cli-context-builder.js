@@ -9,9 +9,9 @@ module.exports = {
     initalizeCliContext: function () {
         let cliContext = new this.CliContext();
 
-        cliContext.environmentMetadata = environmentMetadataBuilder.scanEnvironment(cliContext);
+        cliContext.environmentMetadata = environmentMetadataBuilder.buildEnvironmentMetadata(cliContext);
         cliContext.configuration = configContextBuilder.buildConfiguration(cliContext)
-        cliContext.runtimeMetadata = runtimeMetadataBuilder.scanRuntimeMetadataEnv(cliContext);
+        cliContext.runtimeMetadata = runtimeMetadataBuilder.buildRuntimeMetadata(cliContext);
 
         cliContext.runtimeInfo = runtimeMetadataBuilder.initializeRuntimeInfo(cliContext);
 

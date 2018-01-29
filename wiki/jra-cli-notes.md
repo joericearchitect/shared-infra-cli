@@ -15,6 +15,7 @@ Random Notes
 * Validate environment
   - aws pem, access keys / screts present
   - required configuration properties present
+  - required software installed (aws-cli, terraform, ansible, packer, docker)
 
   
 *Model Objects*
@@ -34,6 +35,7 @@ Operations
 * Build RuntimeMetadata - RuntimeMetadata
 
 * Validate Environment - Actions
+  - Check for config files
 
 * Initialize Environment - 
 
@@ -43,13 +45,13 @@ Operations
 Context JSON Outline
 
 {
-    "environment-metadata": {
+    "environment-metadata": {    - envs.configEnv
     },
-    "configuration": {
+    "configuration": {           - contexts.configContext.devConfig
     },
-    "runtime-metadata": {
+    "runtime-metadata": {        - envs.runtimeEnv
     },
-    "runtime-info": {
+    "runtime-info": {            - contexts.runtimeContext
     }
 }
 

@@ -1,0 +1,157 @@
+{
+    "environmentMetadata": {
+        "devConfigFilesExists": true,
+        "gitHomeDirExists": false
+    },
+    "configuration": {
+        "aws": {
+            "authentication": {
+                "aws-access-key": "AKIAI2KTTQXCHELPKWKQ",
+                "aws-secret-key": "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",
+                "aws-key-path": "/home/vagrant/aws-keys/jra-build.pem",
+                "aws-key-pai-name": "jra-build"
+            },
+            "general": {
+                "aws-region": "us-east-1"
+            },
+            "dns": {
+                "aws-domain-hosted-zone-id": "ZH2CTWO3D8CJ2"
+            }
+        },
+        "jra-cli": {
+            "git": {
+                "git-home-dir": "/home/vagrant/git",
+                "repositories": {
+                    "shared-infra-dir": "shared-infra",
+                    "shared-infra-cli-dir": "shared-infra-cli",
+                    "shared-infra-terraform-modules-dir": "shared-infra-terraform-modules"
+                }
+            }
+        },
+        "cacheConfigs": {
+            "jraApplicationCacheConfig": {
+                "displayName": "JRA Application Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-application-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "jraEnvironmentCacheConfig": {
+                "displayName": "JRA Environment Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-environment-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "jraContainerClusterNodeCacheConfig": {
+                "displayName": "JRA Container Cluster Node Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-container-cluster-node-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "jraContainerClusterCacheConfig": {
+                "displayName": "JRA Container Cluster Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-container-cluster-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "jraContainerCacheConfig": {
+                "displayName": "JRA Container Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-container-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "jraApplicationServiceCacheConfig": {
+                "displayName": "JRA Application Service Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-application-service-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "jraApplicationGroupCacheConfig": {
+                "displayName": "JRA Application Group Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-application-group-cache.json",
+                "cacheDurationSeconds": 28800
+            }
+        }
+    },
+    "runtimeMetadata": {
+        "jraApplicationMetadata": {
+            "cacheConfig": {
+                "displayName": "JRA Application Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-application-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "cacheFileExists": true,
+            "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-application-cache.json",
+            "cacheMeta": {
+                "lastRunTimestamp": "2018-01-28T01:11:07+00:00",
+                "nextScheduledRunTimestamp": "2018-01-28T06:11:07+00:00",
+                "lastRunDurationMilis": 3922,
+                "lastRunDurationDisplay": "3.5 seconds"
+            },
+            "cacheBuildIsNeeded": true
+        },
+        "jraApplicationGroupMetadata": {
+            "cacheConfig": {
+                "displayName": "JRA Application Group Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-application-group-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "cacheFileExists": true,
+            "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-application-group-cache.json",
+            "cacheBuildIsNeeded": true
+        },
+        "jraApplicationServiceMetadata": {
+            "cacheConfig": {
+                "displayName": "JRA Application Service Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-application-service-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "cacheFileExists": true,
+            "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-application-service-cache.json",
+            "cacheBuildIsNeeded": true
+        },
+        "jraContainerMetadata": {
+            "cacheConfig": {
+                "displayName": "JRA Container Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-container-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "cacheFileExists": true,
+            "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-container-cache.json",
+            "cacheBuildIsNeeded": true
+        },
+        "jraContainerClusterMetadata": {
+            "cacheConfig": {
+                "displayName": "JRA Container Cluster Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-container-cluster-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "cacheFileExists": true,
+            "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-container-cluster-cache.json",
+            "cacheBuildIsNeeded": true
+        },
+        "jraContainerClusterNodeMetadata": {
+            "cacheConfig": {
+                "displayName": "JRA Container Cluster Node Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-container-cluster-node-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "cacheFileExists": true,
+            "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-container-cluster-node-cache.json",
+            "cacheBuildIsNeeded": true
+        },
+        "jraEnvironmentMetadata": {
+            "cacheConfig": {
+                "displayName": "JRA Environment Cache",
+                "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-environment-cache.json",
+                "cacheDurationSeconds": 28800
+            },
+            "cacheFileExists": true,
+            "cacheFilePath": "/home/vagrant/.jra/infra/cli/.cache/jra-environment-cache.json",
+            "cacheMeta": {
+                "lastRunTimestamp": "2018-01-28T01:11:07+00:00",
+                "nextScheduledRunTimestamp": "2018-01-28T02:11:07+00:00",
+                "lastRunDurationMilis": 3922,
+                "lastRunDurationDisplay": "3.5 seconds"
+            },
+            "cacheBuildIsNeeded": true
+        }
+    },
+    "runtimeInfo": {
+        "jraApplicationRuntimeInfo": {},
+        "jraEnvironmentRuntimeInfo": {}
+    }
+}

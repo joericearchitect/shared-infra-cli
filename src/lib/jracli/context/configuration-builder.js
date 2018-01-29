@@ -9,7 +9,7 @@ module.exports = {
 
         configuration = yaml.safeLoad(fs.readFileSync(config.defaultConfig.devConfigFilePath, 'utf8'));
 
-        configuration.cacheConfigs = getRuntimeInfoCacheConfiguration()
+        configuration.cacheConfigs = buildRuntimeInfoCacheConfiguration()
 
         return configuration;
     },
@@ -30,7 +30,7 @@ class CacheConfigs {
 
 }
 
-function getRuntimeInfoCacheConfiguration() {
+function buildRuntimeInfoCacheConfiguration() {
     cacheConfigs = new CacheConfigs();
 
     // TODO - for now, hardcode to the default location.  Go back and build the cache configs dynamically.  Taking

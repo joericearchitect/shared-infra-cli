@@ -4,7 +4,7 @@ const config = require('../config/default-config');
 const fsUtils = require('../../commons/util/file-utils');
 
 module.exports = {
-    scanEnvironment: function(cliContext) {
+    buildEnvironmentMetadata: function(cliContext) {
         let environmentMetadata = new this.CliContextEnvironmentMetadata();
 
         environmentMetadata.devConfigFilesExists = fsUtils.isFileSync(config.defaultConfig.devConfigFilePath);

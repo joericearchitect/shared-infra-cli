@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const cliContextBuilder = require('./lib/jracli/core/cli-context-builder');
-const runtimeContextBuilder = require('./lib/jracli/core/runtime-metadata-builder');
+const cliContextBuilder = require('./lib/jracli/context/cli-context-builder');
+const runtimeContextBuilder = require('./lib/jracli/context/runtime-metadata-builder');
 
 var program = require('commander');
 
